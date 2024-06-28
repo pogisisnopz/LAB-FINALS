@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALL OF THE LEGENDS HOMEPAGE</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #000000;
+            font-family: Arial, sans-serif;
+        }
+        
+        header, .sidebar, footer {
+            background-color: #1c1c1c;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: text-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+            text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700;
+        }
+
+        nav ul li a i {
+            transition: text-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+
+        nav ul li a:hover i {
+            color: #ffd700;
+            text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700;
+        }
+        
+        .main-container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            padding: 20px;
+            background: linear-gradient(45deg, #1c1c1c, #000);
+            box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+            transition: box-shadow 0.5s ease-in-out;
+        }
+
+        .sidebar:hover {
+            box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700, 0 0 60px #ffd700;
+        }
+
+        .sidebar h3, .sidebar ul {
+            text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+        }
+
+        .sidebar ul li a:hover {
+            color: #ffd700;
+            text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .main-content .section h2 {
+            text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700;
+        }
+
+        .character-selection img {
+            width: 50px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .character-selection img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700;
+        }
+
+        .glow {
+            color: #ffd700;
+            text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700, 0 0 40px #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Facebook"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#Instragram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#X"><i class="fab fa-twitter"></i> X</a></li>
+                <li><a href="#Discord"><i class="fab fa-discord"></i> Discord</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <img src="COL_white.png" alt="Logo" style="width: 50px; height: auto; margin: 10px;">
+            <h3>Sidebar Menu</h3>
+            <ul>
+                <li><a href="#homepage">Home</a></li>
+                <li><a href="#character_intro">Characters</a></li>
+                <li><a href="#world_intro">World</a></li>
+                <li><a href="#gameplay_intro">Gameplay</a></li>
+                <li><a href="#arsenal_intro">Arsenal</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <section id="homepage" class="section">
+                <h1 class="glow">Welcome to CALL OF THE LEGENDS</h1>
+                <p>BRINGING THE GAME TO EVERYONE'S LIFE.</p>
+                <img src="COL.png" alt="Call of the Legends Logo" style="width: 200px; height: auto;">
+            </section>
+
+            <section id="character_intro" class="section">
+                <h2>Character Introduction</h2>
+                <div class="character-container">
+                    <div class="character-main">
+                        <img src="COL.png" alt="Main Character" id="main-character-image">
+                    </div>
+                    <div class="character-info">
+                        <h3 id="character-name">COL AGENTS</h3>
+                        <p id="character-description">THESE ARE AGENTS OF CALL OF THE LEGENDS</p>
+                    </div>
+                    <div class="character-selection">
+                        <img src="Thalia.png" alt="Character 1" class="character-icon" data-name="Thalia" data-description="Thalia, a Mexican national, is able to take chances that others are unable to due to her nimble and evasive fighting style. Before her opponents even realize what has hit them, she cuts her way through every skirmish." data-image="Thalia.png">
+                        <img src="kizu.png" alt="Character 2" class="character-icon" data-name="Kizu" data-description="Kizu, a Japanese woman, with the capacity to emit smoke on the battlefield in order to disorient and confuse the enemy." data-image="kizu.png">
+                        <img src="Captain Max.png" alt="Character 3" class="character-icon" data-name="Captain Max" data-description="A fictional Special Air Service unit called Task Brigade 132 is commanded by him." data-image="Captain Max.png">
+                        <img src="Leyash.png" alt="Character 4" class="character-icon" data-name="Leyash" data-description="Agent Leyash, a Italian, manipulates battlefields to suit her needs by channeling cosmic forces. She has complete control over her astral form and a keen strategic sense, so she can always see her opponent's next move years in advance." data-image="Leyash.png">
+                        <img src="Makuto.png" alt="Character 5" class="character-icon" data-name="Makuto" data-description="Makuto, a native of Japan, burrows through reality to sneak past enemy lines unobserved. With equal parts cunning and violence, he hits each target before they know where to look." data-image="Makuto.png">
+                        <!-- Add more character icons as needed -->
+                    </div>
+                </div>
+            </section>
+
+            <section id="world_intro" class="section">
+                <h2>World Introduction</h2>
+                <p>CIRCIVANA</p>
+                <p>An unsuccessful radianite experiment caused a top-secret research facility to split apart. You have to decide whether to confront the enemy on their home ground or to batten down the hatches and withstand the onslaught, with defense options as split as the terrain.</p>
+                <img src="CIRCIVANA.jpg" alt="World Image" style="width: 100%; height: auto;">
+            </section>
+
+            <section id="gameplay_intro" class="section">
+                <h2>Gameplay Introduction</h2>
+                <p>COL or CALL OF THE LEGENDS is a team-based first-person tactical hero shooter set in the near future. Players play as one of a set of Agents, characters based on several countries and cultures around the world.</p>
+                <p>COL takes inspiration from the Counter-Strike, CODM, & Valorant, borrowing several mechanics such as the buy menu, spray patterns, and inaccuracy while moving, and slide cancel technique.</p>
+                <img src="gameplay.webp" alt="World Image" style="width: 100%; height: auto;">
+            </section>
+
+            <section id="arsenal_intro" class="section">
+                <h2>Arsenal Introduction</h2>
+                <p>Discover the diverse range of weapons available in CALL OF THE LEGENDS.</p>
+                <div class="arsenal-container">
+                    <div class="weapon">
+                        <img src="Shuggy 45.jpg" alt="Weapon 1" style="width: 200px; height: auto;">
+                        <p>Shuggy 45</p>
+                    </div>
+                    <div class="weapon">
+                        <img src="Cowberatore.jpg" alt="Weapon 2" style="width: 200px; height: auto;">
+                        <p>Cowberatore</p>
+                    </div>
+                    <div class="weapon">
+                        <img src="DODGY.jpg" alt="Weapon 3" style="width: 200px; height: auto;">
+                        <p>DODGY</p>
+                    </div>
+                    <div class="weapon">
+                        <img src="CHIRACH M13.jpg" alt="Weapon 4" style="width: 200px; height: auto;">
+                        <p>M13 CHIRACH</p>
+                    </div>
+                    <div class="weapon">
+                        <img src="SOVIETS MUGS.jpg" alt="Weapon 5" style="width: 200px; height: auto;">
+                        <p>AK MUGS-47 SOVIETS</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <img src="COL_white.png" alt="Footer Logo" style="width: 50px; height: auto; margin-bottom: 10px;">
+        <p>MISSION GOALS: To create an immersive gaming experience that resonates with players worldwide.</p>
+        <p>&copy; 2024 CALL OF THE LEGENDS. ALL RIGHTS RESERVED.</p>
+        <p>WEB DESIGNER: NAVAREZ, VAN RYAN M.</p>
+        <p>EMAIL: 202310560@fit.edu.ph. LOCATION: METRO MANILA, MANILA CITY, PHILIPPINES 0400</p>
+    </footer>
+    
+</body>
+</html>
